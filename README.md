@@ -3,25 +3,42 @@
 >This is a first commit
 >    > This is git push orgin/main
 
-1.순서가있는목록 ㅎㅎ.
-2.두번째 순서
-3.세번쨰 순서
+1.순서가있는목록 ㅎㅎ.  
+2.두번째 순서  
+3.세번쨰 순서  
 
-*순서가 없는 메인 1
-    *순서가 없는 서브1
-    *순서가 없는 서브 2
-*순서가 없는 메인 2
+*순서가 없는 메인 1  
+    *순서가 없는 서브1  
+    *순서가 없는 서브 2  
+*순서가 없는 메인 2  
 
-4개의 공백 또는 하나의 탭으로 들여쓰기를 만나면 변환되기 시작하여 들여쓰지 않은 행을 만날때까지 변환이 계속된다.
+4개의 공백 또는 하나의 탭으로 들여쓰기를 만나면 변환되기 시작하여   들여쓰지 않은 행을 만날때까지 변환이 계속된다.
 
 
-들여쓰기 This is nomal paragraph:
+들여쓰기 미적용 This is nomal paragraph:
     This is code block
 end code block
 
 들여쓰기 적용 This is nomal paragraph  
     This is code block  
 end code block  
+
+<br>로 들여쓰기 하기 This is nomal paragraph<br>
+br태그 써서 줄띄우기 완료..  
+
+수평선<br>
+<hr>  
+<hr><br>
+[Naver](https://naver.com,"네이버 바로가기")
+
+강조 글씨체  
+
+*single asterisks*  
+_single underscores_  
+**double asterisks**  
+__double underscorres__  
+~~canceline~~  
+
 
 ``` python
 #Hash table
