@@ -2,6 +2,7 @@
 ### Mark down 연습중입니다... 
 >This is a first commit
 >    > This is git push orgin/main
+[![LICENSE](https:www.google.com-KELLO)](LICENSE) ![GENERATOR](test-blue.svg) ![VERSION](1.0.1)
 
 1.순서가있는목록 ㅎㅎ.  
 2.두번째 순서  
