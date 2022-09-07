@@ -41,7 +41,8 @@ __double underscorres__
 
 ![Alt text](../../../vs_code/pic/1.png)
 
-
+<img src="../../../vs_code/pic/1.png" width="450px" height="300px"
+title="300px" alt="pic"></img>  
 
 ``` python
 #Hash table
