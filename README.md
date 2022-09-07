@@ -39,6 +39,9 @@ _single underscores_
 __double underscorres__  
 ~~canceline~~  
 
+![Alt text](../../../vs_code/pic/1.png)
+
+
 
 ``` python
 #Hash table
@@ -254,4 +257,3 @@ void  discriminant(int average) {
 }
 ```
 
-[Google](https://google.com, "구글로 바로가기")
