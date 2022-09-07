@@ -1,35 +1,61 @@
-# Catbook
-CATbook is a CATegory-centric Jekyll theme for bloggers. There is a switch button to toggle between dark mode and light mode. This theme is originally inspired from [Book](https://github.com/kkninjae/book).
+### c++ 공부한것들
 
-[![LICENSE](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE) ![GENERATOR](https://img.shields.io/badge/made_with-jekyll-blue.svg) ![VERSION](https://img.shields.io/badge/current_version-1.0-green.svg)
+```C++
+#include <iostream>
 
-**Demo:** https://starry99.github.io/catbook/
+using namespace std;
+int average_calc(int,int,int);
+void discriminant(int average);
+void all_print_data(int dd[3][4]);
+int main() {
+	int data[3][4];
 
-![SCREENSHOT](https://starry99.github.io/catbook/assets/img/lmode.jpg)
-![SCREENSHOT](https://starry99.github.io/catbook/assets/img/dmode.jpg)
+	for (int i = 0; i < 3; i++) {
+		for (int j = 0; j < 4; j++) {
+			cin >> data[i][j];
+		}
+	}
+	cout << "\n" << " 학번 " << " C++ " << " JAVA " <<" DS "<<" 합계 " << " 평균 " << " 등급 " << "\n";
+	cout << "------------------------------------------\n";
+	int average = 0;
+	for (int i = 0; i < 3; i++) {
+		for (int j = 0; j < 4; j++) {
+			cout << " ";
+			cout << data[i][j];
+			cout << " ";
+		}
+		cout << " ";
 
-## Setup
+		average=average_calc(data[i][1], data[i][2], data[i][3]);
+		cout << average;
+		cout << " ";
+		cout << " ";
+		discriminant(average);
+		cout << "\n";
 
-```sh
-$ git clone https://github.com/starry99/catbook
-$ jekyll serve
+	}
+	
+}
 
-# Now you can start customization!
+void all_print_data(int dd[3][4]) {
+	for (int i = 0; i < 3; i++) {
+		for (int j = 0; i < 4; j++) {
+			cout << dd[i][j];
+			cout << " ";
+
+		}
+		cout << "\n";
+
+	}
+}
+int average_calc(int c, int java, int ds) {
+	return (c + java + ds) / 3;
+}
+void  discriminant(int average) {
+	if (average >= 95) {
+		cout << "A+";
+    }
+}
 ```
 
-## Make it yours
-
-If you want to create a new category, you need to create `*name*.html` in the `categories` folder. And add the following content:
-```html
----
-layout: page
-type: *name*
----
-
-{% include archive.html %}
-```
-Then the number of pages in the category will be displayed.
-
-## License
-
-[MIT License](https://opensource.org/licenses/MIT)
+[Google](https://google.com, "구글로 바로가기")
