@@ -23,7 +23,7 @@ end code block
     This is code block  
 end code block  
 
-<pre><code> python
+``` python
 #Hash table
 #매우빠른 평균 삽입 삭제 탐색 연산 제공
 #Table: list
@@ -170,8 +170,7 @@ if __name__=="__main__":
     Hash.search(22)
     
     
-        
-</code></pre>
+```
     
     
     
