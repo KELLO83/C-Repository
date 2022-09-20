@@ -13,14 +13,13 @@ int main() {
 	while (true)
 	{
 		cout << format("id를입력해주세요");
-		cin.ignore();
 		getline(cin, user_id);
 		if (user_id.empty() == true) {
 			break;
 		}
 		if (user_id == pass_user_id) {
 			cout << format("password를 입력해주세요");
-			cin.ignore();//remain buffer '\n' that clear buffer geline method inlcude whitespace while input '\n' 
+			//cin.ignore();//remain buffer '\n' that clear buffer geline method inlcude whitespace while input '\n' 
 			getline(cin, user_pass);
 			if (user_pass.empty() == true) {
 				break;
@@ -31,8 +30,8 @@ int main() {
 
 
 					cout << format("SQL->");
-					cin >> user_input;
-					if (user_input.empty() == true) {
+					getline(cin, user_input);
+					if (user_input.empty()==true) {
 						break;
 					}
 					else
@@ -40,6 +39,7 @@ int main() {
 						cout << user_input << endl;
 					}
 				}
+				break;
 			}
 			else
 			{
