@@ -14,13 +14,17 @@ int main() {
 	{
 		cout << format("id를입력해주세요");
 		cin.ignore();
-		cin >> user_id;
-		if (user_id.empty()==true) {
+		getline(cin, user_id);
+		if (user_id.empty() == true) {
 			break;
 		}
-		if (user_id==pass_user_id) {
+		if (user_id == pass_user_id) {
 			cout << format("password를 입력해주세요");
-			cin >> user_pass;
+			cin.ignore();//remain buffer '\n' that clear buffer geline method inlcude whitespace while input '\n' 
+			getline(cin, user_pass);
+			if (user_pass.empty() == true) {
+				break;
+			}
 			if (user_pass == pass_user_pass) {
 				while (true)
 				{
@@ -39,7 +43,7 @@ int main() {
 			}
 			else
 			{
-				cout << format("password가 불일치합니다")<<endl;
+				cout << format("password가 불일치합니다") << endl;
 				continue;
 			}
 		}
@@ -49,7 +53,16 @@ int main() {
 
 		}
 
-	
+
 	}
 	cout << "프로그램을 종료합니다";
 }
+
+/*
+C++에서는 string 라이브러리로 getline(cin,str) 함수를 사용할 수 있다.
+
+cin은 공백 입력시 문자열의 입력이 종료되나, 이 함수는 공백 또한 값으로 입력 받는다.
+
+즉 한줄을 입력받는게 가능하다.
+
+*/
