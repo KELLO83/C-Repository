@@ -75,8 +75,8 @@ int main() {
 	prefix = (integer_n1)*(integer_n2);
 	postfix = (integer_n1)*(integer_n2);
 
-	cout << format("infix={}({}) {} {}({})", n1, integer_n1, user_operator
-		, n2, integer_n2)<<endl;
+	cout << format("infix={}({}) {} {}({}) = {}", n1, integer_n1, user_operator
+		, n2, integer_n2,res)<<endl;
 	cout << format("Prefix=+{}({}){}({}) = {}", n1, integer_n1, n2, integer_n2, ++prefix)<<endl;
 	cout << format("Postfix={}({}){}({}) = {}", n1, integer_n1, n2, integer_n2
 		,postfix++)<<endl;
