@@ -9,7 +9,8 @@ double divide(int, int);
 int mod(int, int);
 
 int main() {
-	int integer_n1=0,integer_n2=0;
+	int integer_n1 = 0, integer_n2 = 0;
+	int prefix = 0, postfix = 0;
 	char user_operator;
 	/*char assingd_operator[10] = { '+','-','*','/','%'};*/
 	string assingd_operator = "+-*/%";
@@ -38,13 +39,12 @@ int main() {
 		count += 1;
 
 	}
-	for (int i = count+1; i < user_input.length(); i++) {
+	for (int i = count + 1; i < user_input.length(); i++) {
 		buffer_2 = user_input[i];
 		n2.append(buffer_2);
 	}
 	//cout << format("n1={} n2={} operator={}", n1, n2, user_operator) << endl;
 
-	cout << "\n";
 	cout << format("{}=", n1);
 	cin >> integer_n1;
 	cout << format("{}=", n2);
@@ -72,9 +72,16 @@ int main() {
 		res = mod(integer_n1, integer_n2);
 		break;
 	}
-	cout << format("Expression={}{}{}", n1,user_operator, n2)<<endl;
-	cout << format("{}({}) {} {}({})=?",n1,integer_n1,user_operator,n2,integer_n2) << endl;
-	cout << format("Result={}", res);
+	prefix = (integer_n1)*(integer_n2);
+	postfix = (integer_n1)*(integer_n2);
+
+	cout << format("infix={}({}) {} {}({})", n1, integer_n1, user_operator
+		, n2, integer_n2)<<endl;
+	cout << format("Prefix=+{}({}){}({}) = {}", n1, integer_n1, n2, integer_n2, ++prefix)<<endl;
+	cout << format("Postfix={}({}){}({}) = {}", n1, integer_n1, n2, integer_n2
+		,postfix++)<<endl;
+
+	cout << endl << format("Reuslt={}", res);
 
 
 

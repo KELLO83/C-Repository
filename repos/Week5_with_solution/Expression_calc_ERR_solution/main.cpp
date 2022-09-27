@@ -52,6 +52,7 @@ int main() {
 		break;
 	case '*':
 		res = mul(integer_n1, integer_n2);
+		break;
 	case '/':
 		res = divide(integer_n1, integer_n2);
 		break;
