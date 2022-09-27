@@ -20,3 +20,5 @@ repos/**/.ipch
 repos/**/Debug
 
 repos/**/.vs
+
+-errors
