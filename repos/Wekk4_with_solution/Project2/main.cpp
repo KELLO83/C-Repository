@@ -34,7 +34,7 @@ int main() {
 
 double average(int data)
 {
-	return (data) / 3;
+	return (data) / (float)3;
 }
 
 int total(int a, int b, int c)
