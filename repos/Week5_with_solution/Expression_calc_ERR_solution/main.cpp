@@ -18,6 +18,7 @@ int main() {
 	int res = 0;
 	cout << "Expression:";
 	cin >> user_input;
+	cout << endl;
 	for (int i = 0; i < user_input.length(); i++) 
 	{
 		if (isdigit(user_input[i])) {

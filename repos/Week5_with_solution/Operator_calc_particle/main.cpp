@@ -8,7 +8,7 @@ int mod(int, int);
 using namespace std;
 int main() {
 	int n1, n2;
-	int res;
+	int ires;
 	char user_Operator;
 	cout << "1st Operand";
 	cin >> n1;
@@ -16,25 +16,27 @@ int main() {
 	cin >> n2;
 	cout << "Operaotr=";
 	cin >> user_Operator;
+	cout << endl;
 	switch (user_Operator)
 	{
 	case '+':
-		res=add(n1, n2);
+		ires=add(n1, n2);
 		break;
 	case '-':
-		res=sub(n1, n2);
+		ires=sub(n1, n2);
 		break;
 	case '*':
-		res=mul(n1, n2);
+		ires=mul(n1, n2);
 	case '/':
-		res=divide(n1, n2);
+		ires=divide(n1, n2);
 		break;
 	case '%':
-		res=mod(n1, n2);
+		ires=mod(n1, n2);
 		break;
 	}
+	cout << format("1st Operand={}\n2nd Operand={}\n",n1,n2);
 	cout << format("{} {} {} =?", n1, user_Operator, n2)<<endl;
-	cout << format("Result={}", res);
+	cout << format("Result={}", ires);
 
 	
 
