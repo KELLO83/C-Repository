@@ -1,6 +1,6 @@
 #pragma once
-class Calculator {
+class Calc {
 public:
+	Calc();
 	void run();
-	Calculator();
 };

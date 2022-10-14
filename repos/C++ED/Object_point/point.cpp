@@ -1,5 +1,7 @@
 #include <iostream>
 #include <format>
+
+//객체포인터 선언 및 활용
 using namespace std;
 class Circle {
 private:
