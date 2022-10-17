@@ -58,10 +58,11 @@ int main() {
 
 	point Alpha;
 	point delta(20, 30);
+	Alpha.get_elem();
 
 	point* s = &Alpha;
 	(*s).get_elem();
-
+	s->get_elem();
 	point* i = &delta;
 
 	i->get_elem();

@@ -7,8 +7,8 @@ class Animal {
 public:
 	int health = 100;
 	bool food = false;
+	Animal(const char*, int); 
 	Animal();
-	Animal(const char*, int);
 	void show_inform();
 	int get_age() { return this->age; }
 	void set_name_age(const char *,int);
