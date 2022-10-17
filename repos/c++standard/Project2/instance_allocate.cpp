@@ -4,7 +4,8 @@ using namespace std;
 
 //메모리 동적할당
 int main() {
-	int* pdata = new int(10);/* 인스턴스를 동적할당합니다 메모리크기를 지정하지않습니다*/
+	int* pdata = new int;
+	*pdata = 10;
 	cout << pdata <<endl<< sizeof(pdata)<<endl;
 
 	int* arr = new int[5];
