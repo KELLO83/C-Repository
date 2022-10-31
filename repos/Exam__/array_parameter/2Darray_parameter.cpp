@@ -20,6 +20,10 @@ int main() {
 			ref[i][k] = rand() % 30; //0부터 10까지
 		}
 	}
+	int first_data[4];
+	for (auto c : first_data) {
+		c = rand() % 10 + 1;  //1부터 10까지
+	}
 	call_by_value(data);
 	int(*point)[4];//배열을지칭하는 포인터 열의 갯수만 괄호안에 넣어준다
 	point = data;
