@@ -25,7 +25,6 @@ public:
 		this->color = color;
 	}
 	virtual void showPoint() { // overriding
-		Point::showPoint(); // 동적바인딩 해제
 		cout << "x= " << this->x <<endl;
 		cout << "y=" << this->y << endl;
 		cout << "color= " << this->color << endl;
@@ -47,7 +46,7 @@ int main() {
 	pbase->set(50, 100);
 	pbase->Point::showPoint();
 
-	// 다운캐스팅구현 더 구체화
+	// 다운캐스팅구현 
 
 	ColorPoint* down_convert = (ColorPoint*)pbase; // 다운캐스팅
 	down_convert->set(200, 300);

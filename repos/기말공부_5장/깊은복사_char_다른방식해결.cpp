@@ -32,11 +32,17 @@ public:
 	}
 };
 int main() {
-	//동적할당하든 말든 상관없음 스택영역에 만들어도 가능
-	Person p1 = Person("kello", 35);
-	Person p2 = Person(p1);
-	p1.show();
-	p2.show();
+	Person* p1 = new Person("kello", 35);
+	p1->show();
+	Person* p2 = new Person(*p1);
+	p2->show();
+
+	p2->change_name("change_name");
+	p2->show();
+	delete p1;
+	cout << "p2가 살아있니??" << endl;
+	p2->show();
+
 
 
 }

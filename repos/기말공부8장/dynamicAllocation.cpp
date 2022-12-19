@@ -35,7 +35,4 @@ int main() {
 	
 	cout << endl;
 
-	delete C;
-
-
 }
